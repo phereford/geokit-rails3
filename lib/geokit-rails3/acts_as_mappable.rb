@@ -137,7 +137,7 @@ module Geokit
           arel = arel.where(distance_conditions) if distance_conditions
 
           if origin
-            arel = substitute_distance_in_where_values(arel, origin, units, formula)
+            #arel = substitute_distance_in_where_values(arel, origin, units, formula)
           end
         end
 
