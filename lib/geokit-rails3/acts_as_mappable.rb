@@ -125,7 +125,7 @@ module Geokit
             end
             
             distance_select = Arel::SqlLiteral.new("#{@distance_formula} AS #{distance_column_name}")
-            arel = arel.select(distance_column_name)
+            arel = arel.select(distance_column_name.to_sym)
           end
 
           if bounds
